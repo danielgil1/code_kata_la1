@@ -1,0 +1,20 @@
+# Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+
+version: '3.8'
+
+services:
+  kata1:
+    container_name: code_kata_la1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./output
+        target: /workdir/output
+    networks:
+      - kata
+
+# Networks to be created to facilitate communication between containers
+networks:
+  kata: 
