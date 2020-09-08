@@ -1,8 +1,8 @@
 # MyParser
 
 ## Installing and Running
-The easiest way to run the app is using [docker](https://docs.docker.com/get-docker/). Once docker is available run in command line:
-*Run using docker compose:
+The easiest way to run the app is using [docker](https://docs.docker.com/get-docker/). Once docker is available run in command line:  
+* Run using docker compose:
 ```
 docker-compose up -d
 ```
@@ -11,7 +11,7 @@ The output is automatically available through a bind mount on `output` folder. I
 docker logs code_kata_la1
 ```
 
-*Run using individual container, here you will need to bind mount according to your operating system if needed:
+* Run using individual container, here you will need to bind mount according to your operating system if needed:
 ```
 # build the image
 docker build --tag parser:latest . 
